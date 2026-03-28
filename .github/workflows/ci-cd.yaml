@@ -1,0 +1,25 @@
+name: My First GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print message
+        run: echo "Hello, GitHub Actions!"
+
+      - name: Show files
+        run: ls -la
+
+      - name: Run a script
+        run: |
+          echo "This is a multi-line script"
+          echo "Learning GitHub Actions is easy!"
