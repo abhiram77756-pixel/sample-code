@@ -3,6 +3,7 @@ name: My First GitHub Action
 on:
   push:
     branches:
+      - main
       - feature/newtest
   schedule:
     - cron: '*/5 * * * *'   # runs every 5 minutes
