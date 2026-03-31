@@ -18,8 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Print message
-        run: echo "Welcome to GitHub Actions!"
-
+        run: echo "Welcome to ${{ secrets.MY_NAME }}!"
       - name: Show files
         run: ls -la
 
