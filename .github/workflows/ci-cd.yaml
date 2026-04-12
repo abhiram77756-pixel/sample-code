@@ -5,8 +5,8 @@ on:
     branches:
       - main
       - feature/newtest
-  schedule:
-    - cron: '*/5 * * * *'   # runs every 5 minutes
+  # schedule:
+  #   - cron: '*/5 * * * *'   # runs every 5 minutes
   workflow_dispatch:        # optional (manual run button)
 
 jobs:
